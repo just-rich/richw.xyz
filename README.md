@@ -28,7 +28,7 @@ To add new section, copy `LinkSection` block in `WebLinks.js`, and use section t
 `next.seo.config.js` contains SEO related data.
 
 ## Google Analytics
-Depends on which service usedd. This example is for Vercel.
+Depends on which service used. This example is for Vercel.
 
 Settings > Environment Variables > Set Key to `NEXT_PUBLIC_GOOGLE_ANALYTICS` > Set Value to GA ID.
 
