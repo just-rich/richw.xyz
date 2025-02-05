@@ -4,6 +4,7 @@ Simple splash page used for https://richw.xyz
 
 ## Build & Deploy
 
+`npm i --legacy-peer-deps` to install  
 `npm run build` then `npm run start`
 
 ## Modify/Update
