@@ -26,7 +26,7 @@ const webLinks = [
         title: 'Discord (itsrich.)',
         url: 'https://discord.com/invite/rhAvzyzk9J',
         type: 'social',
-        icon: '/discord.svg',
+        icon: '/discord-white.svg',
         on: true
     },
     {
