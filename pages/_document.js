@@ -42,12 +42,24 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
                         rel="stylesheet"
                     />
-
+                    {/* Google Tag Manager */}
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7GB907ERX"></script>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+                                gtag('config', 'G-N7GB907ERX');
+                            `,
+                        }}
+                    />
                 </Head>
                 <body>
-
                     <Main />
                     <NextScript />
+                    {/* Invisible Mastodon link for rel="me" */}
+                    <a rel="me" href="https://mastodon.social/@saidbyrich" style={{ display: 'none' }}>Mastodon</a>
                 </body>
             </Html>
         );
