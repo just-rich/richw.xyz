@@ -29,8 +29,8 @@ const Links = () => {
   const avatarShape = bioData[0].nftAvatar ? `nft-clipped` : `oval-clipped`
 
   // Description and subdescription goes here
-  const descriptionText = descShow ? description : `Write your own fall back text if description not in BioData.js or remove me/leave blank`
-  const subdescText = subdescShow ? subdesc : `Write your own if you want or just remove me/leave blank`
+  const descriptionText = descShow ? description : `Founder & CEO at NVSTly`
+  const subdescText = subdescShow ? subdesc : `surf. poker. hustle. punkrock.`
 
   const newProduct = bioData[0].newProduct; // checking for newProduct flag true false
   const newProductUrl = bioData[0].newProductUrl; // get product url if available
