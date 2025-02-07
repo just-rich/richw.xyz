@@ -2,12 +2,12 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 body.dark-mode {
-  --img: invert(1);
+  --img: invert(1); /* Set to 0 if no Inversion needed, SVGs are already white */
   --avatar-shadow: rgba(28,22,47,.3);
 }
 
 body.light-mode {
-  --img: invert(0);
+  --img: invert(0); /* Invert colors to make white SVGs appear black */
   --avatar-shadow: rgba(48,52,77,.1);
 } 
 

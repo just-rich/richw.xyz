@@ -104,7 +104,7 @@ const Links = () => {
                       return (
                           <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                             <LinkBox className="socialIcon">
-                              <img src={i.icon}} />
+                              <img src={i.icon} />
                             </LinkBox>
                           </a>
                       )
