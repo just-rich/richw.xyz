@@ -8,6 +8,7 @@ import { darkTheme, lightTheme } from "../styles/theme.config";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function MyApp({ Component, pageProps }) {
     const darkMode = useDarkMode(false, { storageKey: null, onChange: null })
@@ -23,11 +24,11 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <GoogleAnalytics />
+            <SpeedInsights />
             <ThemeProvider theme={theme}>
                 <Head>
                     <meta content="width=device-width, initial-scale=1" name="viewport" />
                     <link rel="icon" href="/favicon.ico" />
-
                 </Head>
                 <GlobalStyle />
                 <Layout>
@@ -59,7 +60,7 @@ function MyApp({ Component, pageProps }) {
                 </Layout>
             </ThemeProvider>
         </>
-
     )
 }
+
 export default MyApp
