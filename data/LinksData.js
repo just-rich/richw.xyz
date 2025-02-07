@@ -83,7 +83,7 @@ const webLinks = [
         title: 'Help Center',
         url: 'https://help.nvstly.com',
         type: 'featured',
-        icon: '/doc.png',
+        icon: '/doc.svg',
         on: true
     },
 	
@@ -101,7 +101,7 @@ const webLinks = [
         title: 'Buy Me a Coffee',
         url: 'https://www.buymeacoffee.com/itsrich',
         type: 'other',
-        icon: '/bmc.png',
+        icon: '/bmc.svg',
         on: true
     },
 
