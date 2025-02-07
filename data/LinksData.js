@@ -50,6 +50,13 @@ const webLinks = [
         icon: '/hive.svg',
         on: true
     },
+	    {
+        title: 'Product Hunt',
+        url: 'https://www.producthunt.com/@richw',
+        type: 'social',
+        icon: '/producthunt.svg',
+        on: true
+    },
     // Featured  section
     {
         title: 'NVSTly Web App',

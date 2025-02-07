@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import Script from "next/script";
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -42,8 +43,14 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
                         rel="stylesheet"
                     />
+                </Head>
+                <body>
+                    <Main />
+                    <NextScript />
                     {/* Google Tag Manager */}
-                    <script
+                    <Script
+                        id="gtm-script"
+                        strategy="afterInteractive"
                         dangerouslySetInnerHTML={{
                             __html: `
                                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -54,16 +61,12 @@ export default class MyDocument extends Document {
                             `,
                         }}
                     />
-                </Head>
-                <body>
                     {/* Google Tag Manager (noscript) */}
                     <noscript>
                         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC76DGNT"
                         height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
                     </noscript>
                     {/* End Google Tag Manager (noscript) */}
-                    <Main />
-                    <NextScript />
                     {/* Invisible Mastodon link for rel="me" */}
                     <a rel="me" href="https://mastodon.social/@saidbyrich" style={{ display: 'none' }}>Mastodon</a>
                 </body>

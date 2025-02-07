@@ -1,8 +1,8 @@
 {
-  "name": "realvjy",
+  "name": "rich",
   "version": "5.0.0",
-  "description": "Design Wizard",
-  "author": "realvjy",
+  "description": "Clever description goes here",
+  "author": "rich",
   "license": "MIT",
   "private": true,
   "scripts": {

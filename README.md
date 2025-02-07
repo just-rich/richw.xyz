@@ -33,6 +33,16 @@ Depends on which service used. This example is for Vercel.
 
 Settings > Environment Variables > Set Key to `NEXT_PUBLIC_GOOGLE_ANALYTICS` > Set Value to GA ID.
 
+## Notes
+In `components/WebLinks.js` there's a line for <LinkTitle> for each section of links. It has a style that filters SCGs used for that section, which makes them 
+white for a dark theme and black for a light theme. The style has been removed to use the original SVG color, as some SVGs are using colors. Original line below:
+
+For Featured:  
+`<LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />`
+
+For Social Icons  
+`<img src={i.icon} style={{ filter: 'var(--img)' }} />`
+
 #
 
 Founder & CEO at [NVSTly](https://nvstly.com)  
