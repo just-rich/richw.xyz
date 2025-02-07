@@ -23,7 +23,6 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <GoogleAnalytics />
-            <SpeedInsights />
             <ThemeProvider theme={theme}>
                 <Head>
                     <meta content="width=device-width, initial-scale=1" name="viewport" />
