@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 body.dark-mode {
-  --img: invert(1); /* Set to 0 if no Inversion needed, SVGs are already white */
+  --img: invert(0); /* Set to 0 if no Inversion needed, SVGs are already white */
   --avatar-shadow: rgba(28,22,47,.3);
 }
 

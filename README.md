@@ -43,6 +43,8 @@ For Featured:
 For Social Icons  
 `<img src={i.icon} style={{ filter: 'var(--img)' }} />`
 
+Or setting `img: invert` to `0` for dark-mode in `styles/GlobalStyle.js` will not invert the SVGs from white to black.
+
 #
 
 Founder & CEO at [NVSTly](https://nvstly.com)  
