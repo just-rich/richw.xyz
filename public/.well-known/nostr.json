@@ -1,0 +1,29 @@
+{
+  "names": {
+    "rich": "f3631db986efb7b8bc2c76db05f0e8219210dd4ea213c06ada25677980c40978"
+  },
+  "relays": {
+    "f3631db986efb7b8bc2c76db05f0e8219210dd4ea213c06ada25677980c40978": [
+      "wss://relay.damus.io",
+      "wss://strfry.iris.to",
+      "wss://relay.snort.social",
+      "wss://relay.highlighter.com",
+      "wss://relay.primal.net",
+      "wss://nostr-01.yakihonne.com",
+      "wss://nostr-02.yakihonne.com",
+      "wss://multiplextr.coracl.social",
+      "wss://nos.lol",
+      "wss://relay.mostr.pub",
+      "wss://njump.me",
+      "wss://relay.nostr.band",
+      "wss://offchain.pub",
+      "wss://carlos-cdb.top",
+      "wss://relay.stoner.com",
+      "wss://ditto.pub/relay",
+      "wss://history.nostr.watch",
+      "wss://monitorlizard.nostr1.com",
+      "wss://nostr-relay.bitcoin.ninja",
+      "wss://relaypag.es",
+      "wss://purplepag.es"
+    ]
+}
