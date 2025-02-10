@@ -4,7 +4,7 @@ export default {
         locale: 'en_US',
         title: 'Rich',
         url: 'https://richw.xyz',
-        description: 'Startups, projects, and more by Rich',
+        description: 'Startups, projects, and more by Rich. Founder & CEO of NVSTly, the social investing platform revolutionizing trade sharing and insights.- ',
         locale: 'en_US',
         keywords: 'founder, executive, creator, project manager, project management, team builder, team management, startup, startups',
         images: [
