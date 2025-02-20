@@ -55,6 +55,11 @@ const Links = () => {
   const others = allLinks.filter((el) => {
     return el.type === "other" && el.on
   });
+  
+  // Get data for articles section
+  const articles = allLinks.filter((el) => {
+    return el.type === "articles" && el.on
+  });
 
   return (
       <LinkWrapper>
@@ -184,6 +189,26 @@ const Links = () => {
                     </LinkSection> : ''
               }
               {/* End Other Section */}
+			  
+              {/* Articles Section */}
+              {
+                articles.length > 0 ?
+                    <LinkSection>
+                      <h3>{articles[0].type}</h3>
+                      {
+                        articles.map((i) => {
+                          return (
+                              <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
+                                <LinkBox>
+                                  <LinkTitle><img src={i.icon} /> {i.title}</LinkTitle> <NewUp />
+                                </LinkBox>
+                              </a>
+                          )
+                        })
+                      }
+                    </LinkSection> : ''
+              }
+              {/* End Articles Section */}
 
             </WebLinkWrap>
             {/* End Weblinks */}

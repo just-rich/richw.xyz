@@ -120,6 +120,24 @@ const webLinks = [
         icon: '/paypal.svg',
         on: true
     },
+	
+	// Articles section
+	
+    {
+        title: 'Featured on IndieHackers',
+        url: 'https://www.indiehackers.com/post/34-year-old-finds-financial-freedom-through-day-trading-and-uses-it-to-build-a-10k-mo-fintech-product-PujthWlU8L3nS4mz2GSc',
+        type: 'articles',
+        icon: '/ih.svg',
+        on: true
+    },
+
+    {
+        title: 'IndieHackers Featured My Journey on Building NVSTly',
+        url: 'https://www.indiehackers.com/post/growing-a-fintech-product-to-12k-mo-by-leveraging-discord-8qNnfXXF9OGLceO1yStX',
+        type: 'articles',
+        icon: '/ih.svg',
+        on: true
+    },
 ];
 
 export default webLinks;
