@@ -46,4 +46,10 @@ Founder & CEO at [NVSTly](https://nvstly.com)
 X/Twitter: https://x.com/saidbyrich  
 LinkedIn: https://www.linkedin.com/in/rich-watson  
 Discord: `itsrich.` (User ID: `877345663900340254`) - [Find me here](https://discord.com/invite/rhAvzyzk9J) & beware of impersonaters!
+
+<p align="center">
+  <a href="https://discord.com/users/877345663900340254">
+    <img src="public/discord_profile.png" alt="My Discord Profile" />
+  </a>
+</p>
     
