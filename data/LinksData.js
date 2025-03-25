@@ -80,6 +80,13 @@ const webLinks = [
         on: true
     },
     {
+        title: 'NVSTly Discord App/Bot',
+        url: 'https://nvstly.com/go/bot',
+        type: 'featured',
+        icon: '/discord.svg',
+        on: true
+    },
+    {
         title: 'Help Center',
         url: 'https://help.nvstly.com',
         type: 'featured',
