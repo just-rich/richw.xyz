@@ -43,9 +43,10 @@ and featured sections.
 #
 
 Founder & CEO at [NVSTly](https://nvstly.com)  
-X/Twitter: https://x.com/saidbyrich  
-LinkedIn: https://www.linkedin.com/in/rich-watson  
-Discord: `itsrich.` (User ID: `877345663900340254`) - [Find me here](https://discord.com/invite/rhAvzyzk9J) & beware of impersonaters!
+**Website:** [richw.xyz](https://richw.xyz)  
+**X/Twitter:** [saidbyrich](https://x.com/saidbyrich)  
+**LinkedIn:** [linkedin.com/in/richw-watson](https://www.linkedin.com/in/rich-watson)  
+**Discord:** `itsrich.` (User ID: `877345663900340254`) - [Find me here](https://discord.com/invite/rhAvzyzk9J) & beware of impersonaters!
 
 <p align="center">
   <a href="https://discord.com/users/877345663900340254">
