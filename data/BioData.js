@@ -7,7 +7,7 @@ const bioData = [
         titleImg: true,
         avatar: '/avatar.png',
         nftAvatar: true,
-        description: 'Founder & CEO at <a href="https://nvstly.com">NVSTly</a>',
+        description: 'Founder & CEO at NVSTly',
         descShow: true,
         subdesc: 'surf. poker. hustle. punkrock.',
         subdescShow: true,
