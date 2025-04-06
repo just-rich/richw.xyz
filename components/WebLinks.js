@@ -7,7 +7,7 @@ import Link from "next/link";
 import { ChevronRightIcon, HexIcon, HomeIcon, TwitterIcon, NewUp, OvalIcon } from './icons';
 import allLinks from "../data/LinksData";
 import bioData from "../data/BioData";
-import React from 'react';
+import React from 'react'; // Add this line if not already present
 
 const Links = () => {
 
@@ -124,6 +124,14 @@ const Links = () => {
                 </div>
               </LinkSection>
               {/* Social Icon */}
+
+              {/* New Image Section */}
+              <NewImageSection>
+                <a href="https://richw.xyz/go/discord" target="_blank">
+                  <img src="/discord_profile.png" alt="Find me on Discord" />
+                </a>
+              </NewImageSection>
+              {/* End New Image Section */}
 
               {/* featured Section */}
               {
@@ -538,4 +546,15 @@ const NewSection = styled.div`
        transform: scale(1.01);
       }
     }
+`
+
+// Add this new section for the image link
+const NewImageSection = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
 `
