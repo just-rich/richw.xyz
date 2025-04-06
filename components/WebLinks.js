@@ -79,17 +79,19 @@ const Links = () => {
                   />
                 </AvatarWrap>
               </Avatar>
-              <Title>
-                {/* Using titleimg flag to use image as title or text */}
-                {titleImg ?
-                    <img src={titleImage} className="handle" /> :
-                    <h1>{name}</h1>
-                }
-                {/* if your remove username from data it will not appear */}
-                {
-                  username ? <h3><a href={`${url}`}>{username}</a></h3> : ''
-                }
-              </Title>
+               <Title>
+              {/* Using titleimg flag to use image as title or text */}
+              {titleImg ? (
+                <img src={titleImage} className="handle" />
+              ) : (
+                <h1>{name}</h1>
+              )}
+            </Title>
+          </LinkHeader>
+          <Description>
+            {/* Render the description using dangerouslySetInnerHTML */}
+            <div dangerouslySetInnerHTML={{ __html: description }} />
+          </Description>
             </LinkHeader>
 
             {/* Bio Section */}
