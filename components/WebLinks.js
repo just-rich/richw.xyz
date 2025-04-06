@@ -79,151 +79,141 @@ const Links = () => {
                   />
                 </AvatarWrap>
               </Avatar>
-               <Title>
-              {/* Using titleimg flag to use image as title or text */}
-              {titleImg ? (
-                <img src={titleImage} className="handle" />
-              ) : (
-                <h1>{name}</h1>
-              )}
-            </Title>
-          </LinkHeader>
-          <Description>
-            {/* Render the description using dangerouslySetInnerHTML */}
-            <div dangerouslySetInnerHTML={{ __html: description }} />
-          </Description>
+              <Title>
+                {/* Using titleimg flag to use image as title or text */}
+                {titleImg ? (
+                  <img src={titleImage} className="handle" />
+                ) : (
+                  <h1>{name}</h1>
+                )}
+              </Title>
             </LinkHeader>
-
+            <Description>
+              {/* Render the description using dangerouslySetInnerHTML */}
+              <div dangerouslySetInnerHTML={{ __html: description }} />
+            </Description>
             {/* Bio Section */}
             <LinkBio>
               {description && <h1>{descriptionText} </h1>}
               {subdesc && <h4>{subdescText}</h4>}
             </LinkBio>
             {/* End Bio Section */}
-
-            {/* Weblinks started */}
-            <WebLinkWrap>
-              {/* Social Icon */}
-              <LinkSection className="social">
-                <div className="iconsonly">
-                  {
-                    social.map((i) => {
-                      return (
-                          <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
-                            <LinkBox className="socialIcon">
-                              <img src={i.icon} style={{ filter: 'var(--img)' }} />
-                            </LinkBox>
-                          </a>
-                      )
-                    })
-                  }
-                </div>
-              </LinkSection>
-              {/* Social Icon */}
-
-              {/* featured Section */}
-              {
-                featured.length > 0 ?
-                    <LinkSection>
-                      <h3>{featured[0].type}</h3>
-                      {
-                        featured.map((i) => {
-                          return (
-                              <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
-                                <LinkBox>
-                                  <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
-                                </LinkBox>
-                              </a>
-                          )
-                        })
-                      }
-                      {/* New Section will render once newProduct == true */}
-                      {(newProduct) ? <NewSection>
-                        <a href={newProductUrl} target="_blank" rel="noreferrer">
-                          <img
-                              src={'/newproduct.png'}
-                              className="newproduct"
-                          />
-                        </a>
-                      </NewSection> : ''
-                      }
-                    </LinkSection> : ''
-              }
-              {/* End featured Section */}
-
-              {/* NFT Section */}
-              {
-                nfts.length > 0 ?
-                    <LinkSection>
-                      <h3>{nfts[0].type}s</h3>
-                      {
-                        nfts.map((i) => {
-                          return (
-                              <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
-                                <LinkBox>
-                                   <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
-                                </LinkBox>
-                              </a>
-                          )
-                        })
-                      }
-                    </LinkSection>
-                    : ''
-              }
-              {/* End NFT Section */}
-
-              {/* Other Section */}
-              {
-                others.length > 0 ?
-                    <LinkSection>
-                      <h3>{others[0].type}</h3>
-                      {
-                        others.map((i) => {
-                          return (
-                              <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
-                                <LinkBox>
-                                  <LinkTitle><img src={i.icon} /> {i.title}</LinkTitle> <NewUp />
-                                </LinkBox>
-                              </a>
-                          )
-                        })
-                      }
-                    </LinkSection> : ''
-              }
-              {/* End Other Section */}
-			  
-              {/* Articles Section */}
-              {
-                articles.length > 0 ?
-                    <LinkSection>
-                      <h3>{articles[0].type}</h3>
-                      {
-                        articles.map((i) => {
-                          return (
-                              <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
-                                <LinkBox>
-                                  <LinkTitle><img src={i.icon} /> {i.title}</LinkTitle> <NewUp />
-                                </LinkBox>
-                              </a>
-                          )
-                        })
-                      }
-                    </LinkSection> : ''
-              }
-              {/* End Articles Section */}
-
-            </WebLinkWrap>
-            {/* End Weblinks */}
           </TopPart>
+          {/* Weblinks started */}
+          <WebLinkWrap>
+            {/* Social Icon */}
+            <LinkSection className="social">
+              <div className="iconsonly">
+                {
+                  social.map((i) => {
+                    return (
+                        <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
+                          <LinkBox className="socialIcon">
+                            <img src={i.icon} style={{ filter: 'var(--img)' }} />
+                          </LinkBox>
+                        </a>
+                    )
+                  })
+                }
+              </div>
+            </LinkSection>
+            {/* Social Icon */}
+            {/* featured Section */}
+            {
+              featured.length > 0 ?
+                  <LinkSection>
+                    <h3>{featured[0].type}</h3>
+                    {
+                      featured.map((i) => {
+                        return (
+                            <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
+                              <LinkBox>
+                                <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
+                              </LinkBox>
+                            </a>
+                        )
+                      })
+                    }
+                    {/* New Section will render once newProduct == true */}
+                    {(newProduct) ? <NewSection>
+                      <a href={newProductUrl} target="_blank" rel="noreferrer">
+                        <img
+                            src={'/newproduct.png'}
+                            className="newproduct"
+                        />
+                      </a>
+                    </NewSection> : ''
+                    }
+                  </LinkSection> : ''
+            }
+            {/* End featured Section */}
+            {/* NFT Section */}
+            {
+              nfts.length > 0 ?
+                  <LinkSection>
+                    <h3>{nfts[0].type}s</h3>
+                    {
+                      nfts.map((i) => {
+                        return (
+                            <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
+                              <LinkBox>
+                                 <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
+                              </LinkBox>
+                            </a>
+                        )
+                      })
+                    }
+                  </LinkSection>
+                  : ''
+            }
+            {/* End NFT Section */}
+            {/* Other Section */}
+            {
+              others.length > 0 ?
+                  <LinkSection>
+                    <h3>{others[0].type}</h3>
+                    {
+                      others.map((i) => {
+                        return (
+                            <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
+                              <LinkBox>
+                                <LinkTitle><img src={i.icon} /> {i.title}</LinkTitle> <NewUp />
+                              </LinkBox>
+                            </a>
+                        )
+                      })
+                    }
+                  </LinkSection> : ''
+            }
+            {/* End Other Section */}
+            {/* Articles Section */}
+            {
+              articles.length > 0 ?
+                  <LinkSection>
+                    <h3>{articles[0].type}</h3>
+                    {
+                      articles.map((i) => {
+                        return (
+                            <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
+                              <LinkBox>
+                                <LinkTitle><img src={i.icon} /> {i.title}</LinkTitle> <NewUp />
+                              </LinkBox>
+                            </a>
+                        )
+                      })
+                    }
+                  </LinkSection> : ''
+            }
+            {/* End Articles Section */}
+          </WebLinkWrap>
+          {/* End Weblinks */}
           <BottomPart>
             <LinkFoot>
               <h4>{footerText} <a href={authorURL}>{author}</a></h4>
             </LinkFoot>
           </BottomPart>
-
         </LinkContainer>
       </LinkWrapper>
-
   )
 };
 
