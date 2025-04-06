@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ChevronRightIcon, HexIcon, HomeIcon, TwitterIcon, NewUp, OvalIcon } from './icons';
 import allLinks from "../data/LinksData";
 import bioData from "../data/BioData";
+import React from 'react';
 
 const Links = () => {
 
@@ -61,6 +62,11 @@ const Links = () => {
     return el.type === "articles" && el.on
   });
 
+  // Function to render HTML safely
+  const createMarkup = (html) => {
+    return { __html: html };
+  };
+
   return (
       <LinkWrapper>
         <LinkContainer>
@@ -94,7 +100,7 @@ const Links = () => {
 
             {/* Bio Section */}
             <LinkBio>
-              {description && <h1>{descriptionText} </h1>}
+              {description && <h1 dangerouslySetInnerHTML={createMarkup(descriptionText)} />}
               {subdesc && <h4>{subdescText}</h4>}
             </LinkBio>
             {/* End Bio Section */}
