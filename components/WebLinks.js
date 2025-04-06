@@ -127,7 +127,7 @@ const Links = () => {
 
               {/* New Image Section */}
               <NewImageSection>
-                <a href="https://richw.xyz/go/discord" target="_blank">
+                <a href="https://richw.xyz/go/discord" target="_blank" rel="noreferrer">
                   <img src="/discord_profile.png" alt="Find me on Discord" />
                 </a>
               </NewImageSection>
