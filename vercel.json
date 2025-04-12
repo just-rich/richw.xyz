@@ -6,6 +6,7 @@
     { "source": "/go/mastodon", "destination": "https://mastodon.social/@saidbyrich", "permanent": true },
     { "source": "/go/nostr", "destination": "https://njump.me/npub17d33mwvxa7mm30pvwmdstu8gyxfpph2w5gfuq6k6y4nhnqxyp9uq32quh2", "permanent": true },
     { "source": "/go/bsky", "destination": "https://bsky.app/profile/richw.xyz", "permanent": true },
-    { "source": "/go/discord", "destination": "https://discord.com/users/877345663900340254", "permanent": true }
+    { "source": "/go/discord", "destination": "https://discord.com/users/877345663900340254", "permanent": true },
+	{ "source": "/go/cointree", "destination": "https://cointr.ee/rich", "permanent": true }
   ]
 }
