@@ -1,0 +1,18 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjExMTEyMjcsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgwMGI0MDBkMEE5MENFZjA3QjRENTU1ZERkNUIxZGNkYTIwRkMzM0RDIn0",
+    "payload": "eyJkb21haW4iOiJyaWNody54eXoifQ",
+    "signature": "MHg3N2MyNDc0ZmMxOTM0YmIwMDgwNTI2YmU3MjMwYTgzNGUwNjA0NjQ2ZTdlZjk3MzljYTQ3NmFiZDdmNjE0MzczMTQyZGY5ZTI2MDI1YjM2YTUzODRjMjQ3MzY0ZTIxYzU5ZjZiMTFiYWM2OWE1OTI5YzliNjM1YTZiZWViM2M4MjFj"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Example Frame",
+    "iconUrl": "https://richw.xyz/icon.png",
+    "homeUrl": "https://richw.xyz",
+    "imageUrl": "https://richw.xyz/image.png",
+    "buttonTitle": "Check this out",
+    "splashImageUrl": "https://richw.xyz/splash.png",
+    "splashBackgroundColor": "#eeccff",
+    "webhookUrl": "https://richw.xyz/api/webhook"
+  }
+}
