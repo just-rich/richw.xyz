@@ -30,6 +30,20 @@ const webLinks = [
         on: true
     },
     {
+        title: 'Blurt',
+        url: 'https://blurt.blog/@itsrich',
+        type: 'social',
+        icon: '/blurt.svg',
+        on: true
+    },
+    {
+        title: 'Hive / InLeo',
+        url: 'https://inleo.io/profile/itsrich',
+        type: 'social',
+        icon: '/hive.svg',
+        on: true
+    },
+    {
         title: 'Mastodon',
         url: 'https://mastodon.social/@saidbyrich',
         type: 'social',
@@ -41,13 +55,6 @@ const webLinks = [
         url: 'https://njump.me/npub17d33mwvxa7mm30pvwmdstu8gyxfpph2w5gfuq6k6y4nhnqxyp9uq32quh2',
         type: 'social',
         icon: '/nostr.svg',
-        on: true
-    },
-    {
-        title: 'Hive / InLeo',
-        url: 'https://inleo.io/profile/itsrich',
-        type: 'social',
-        icon: '/hive.svg',
         on: true
     },
 	    {
